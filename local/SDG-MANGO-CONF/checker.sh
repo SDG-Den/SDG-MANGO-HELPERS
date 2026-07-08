@@ -8,10 +8,10 @@ if [ "$KEY" == "bind" ]; then
     KEY=$(echo "$STRING" | cut -d ',' -f 1,2,3 | sed 's/bindl/bind/' | sed 's/binds/bind/' | sed 's/bindr/bind/' | sed 's/binds/bind/' | sed 's/bindp/bind/' | sed 's|=.*,.*,|=MOD,KEY,|g' | sed 's/ //g' )
 fi
 
-EXAMPLE=$(cat ~/.config/sdgos/config-overview/options.list | grep " $KEY " | head -1 | cut -d '|' -f2)
-EXPLAINER=$(cat ~/.config/sdgos/config-overview/options.list | grep " $KEY " | head -1 | cut -d '|' -f3)
-LINK=$(cat ~/.config/sdgos/config-overview/options.list | grep " $KEY "  | head -1 | cut -d '|' -f4)
-EXTRA=$(cat ~/.config/sdgos/config-overview/options.list | grep " $KEY " | head -1 | cut -d '|' -f5 | sed 's/ //g')
+EXAMPLE=$(cat ~/.local/SDG-MANGO-CONF/options.list | grep " $KEY " | head -1 | cut -d '|' -f2)
+EXPLAINER=$(cat ~/.local/SDG-MANGO-CONF/options.list | grep " $KEY " | head -1 | cut -d '|' -f3)
+LINK=$(cat ~/.local/SDG-MANGO-CONF/options.list | grep " $KEY "  | head -1 | cut -d '|' -f4)
+EXTRA=$(cat ~/.local/SDG-MANGO-CONF/options.list | grep " $KEY " | head -1 | cut -d '|' -f5 | sed 's/ //g')
 echo "## Mango Config Key Explainer"
 echo ""
 if [ "$STRING" == "" ];then

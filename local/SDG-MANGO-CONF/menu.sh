@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONFDIR="/home/$(whoami)/.config/mango"
+CONFDIR="$HOME/.config/mango"
 echo "confdir is $CONFDIR"
 
 app=micro
@@ -10,6 +10,6 @@ while $true; do
 
     echo "selected is $selected"
 
-    STRING=$(cat $CONFDIR/$selected | fzf --layout 'reverse' --preview-window 'down:50%,wrap-word' --preview-label='alt+b - open documentation in browser' --preview-label-pos='top'  --bind 'alt-b:execute(~/.config/sdgos/config-overview/browser.sh {})' --preview='~/.config/sdgos/config-overview/checker.sh {}')
+    STRING=$(cat $CONFDIR/$selected | fzf --layout 'reverse' --preview-window 'down:50%,wrap-word' --preview-label='alt+b - open documentation in browser' --preview-label-pos='top'  --bind 'alt-b:execute(~/.local/SDG-MANGO-CONF/browser.sh {})' --preview='~/.local/SDG-MANGO-CONF/checker.sh {}')
 
 done

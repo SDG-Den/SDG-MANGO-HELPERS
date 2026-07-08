@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONFDIR="/home/$(whoami)/.config/mango"
+CONFDIR="$HOME/.config/mango"
 echo "confdir is $CONFDIR"
 
 app=micro

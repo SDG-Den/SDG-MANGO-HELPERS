@@ -7,6 +7,6 @@ if [ "$KEY" == "bind" ]; then
 fi
 
 
-LINK=$(cat ~/.config/sdgos/config-overview/options.list | grep " $KEY "  | cut -d '|' -f4)
+LINK=$(cat ~/.local/SDG-MANGO-CONF/options.list | grep " $KEY "  | cut -d '|' -f4)
 
 firefox --new-tab $LINK

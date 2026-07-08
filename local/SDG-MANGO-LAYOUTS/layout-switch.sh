@@ -3,8 +3,8 @@
 #mmsg dispatch togglefloating
 
 
-SELECTED=$(cat ~/.config/sdgos/tuis/layouts.list | cut -d '|' -f 1 | fzf --layout=reverse)
+SELECTED=$(cat ~/.local/SDG-MANGO-LAYOUTS/layouts.list | cut -d '|' -f 1 | fzf --layout=reverse)
 
-CMD=$(cat ~/.config/sdgos/tuis/layouts.list | grep -e "$SELECTED" | cut -d '|' -f 2)
+CMD=$(cat ~/.local/SDG-MANGO-LAYOUTS/layouts.list | grep -e "$SELECTED" | cut -d '|' -f 2)
 
 eval $CMD
