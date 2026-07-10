@@ -66,8 +66,7 @@ case $LAYOUT in
         ;;
     VF)
         echo "Vertical Fair"
-        mmsg dispatch toggle_render_border
-        mmsg dispatch togglegaps
+        bash -c ~/.local/SDG-MANGO-GROUPS/group-all.sh
         ;;
     *)
         notify-send "Unhandled Layout Detected"
