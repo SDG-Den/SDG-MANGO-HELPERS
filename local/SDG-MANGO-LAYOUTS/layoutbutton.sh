@@ -62,8 +62,7 @@ case $LAYOUT in
         ;;
     F)
         echo "Fair"
-        mmsg dispatch toggle_render_border
-        mmsg dispatch togglegaps
+        bash -c ~/.local/SDG-MANGO-GROUPS/group-all.sh
         ;;
     VF)
         echo "Vertical Fair"
