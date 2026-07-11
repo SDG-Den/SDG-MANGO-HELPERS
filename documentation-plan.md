@@ -1,51 +1,82 @@
 # SDG-MANGO-HELPERS Documentation Plan
 
 ## Current Status
-One doc file exists (`docs/SDG-MANGO-HELPERS/README.md`, full documentation). One local README exists (`local/SDG-MANGO-CONF/README.md`). 4 tip files exist.
+One doc file exists (`docs/SDG-MANGO-HELPERS/README.md`, 36 lines). Four tip files exist in `.md` format. The existing docs cover 4 of the 4 main CLI commands but are brief. Several significant features have zero documentation: RGB Daemon (v1+v2), Window Grouping, layoutbutton.sh, checker.sh category system.
+
+## Source-Verified Inventory
+**Components:**
+
+### 4 CLI Commands (symlinked to /usr/bin/)
+| Command | Script | Purpose |
+|---------|--------|---------|
+| dmsbars | `bar-presets.sh` | Interactive bar preset picker (6 presets) + individual bar toggles |
+| manlayout | `layout-switch.sh` | Layout switcher (14 layouts via mmsg) |
+| manconf | `mango-config.sh` | Config file browser with bat preview + micro editor |
+| manmenu | `menu.sh` | Interactive config line browser with key explanations + Firefox docs |
+
+### Additional Scripts (not symlinked)
+| Script | Purpose |
+|--------|---------|
+| `checker.sh` | Config key explainer — 15 category branches (bind, monitor, dwindle, master, scroller, tearing, env, animations, bezier, windowrules, tagrules, layerrules, scratchpad, overview, autostart) |
+| `browser.sh` | Opens doc URL for a config key in Firefox |
+| `layoutbutton.sh` | Bar widget layout indicator, executes side effects per layout type |
+| `marker.sh` | Marks current workspace state for swapping |
+| `swapmarked.sh` | Swaps windows between marked and current workspace (multi-monitor) |
+| `group-all.sh` | Groups all windows on monitor (used for Fair layouts) |
+| `group-merge.sh` | Merges window into a group by direction |
+| `rgb-daemon.sh` | v1 RGB keyboard daemon (ckb-next, watches keymode) |
+| `rgb-daemon-v2.sh` | v2 daemon (ckb1 device, watches theme/keymode/tags via inotifywait + mmsg) |
+
+### Data Files
+| File | Content |
+|------|---------|
+| `options.list` | 232 pipe-delimited entries covering ALL mangoWM config options |
+| `layouts.list` | 14 layout definitions (name | mmsg command) |
+| `template.theme` | RGB daemon theme template with color placeholders |
 
 ## Docs System (`docs/`)
 **Deploy location**: `~/.local/docs/SDG-MANGO-HELPERS/`
 
-### Existing Docs
-| File | Topic |
-|------|-------|
-| docs/SDG-MANGO-HELPERS/README.md | Full documentation: all 4 commands, 9 source files, dependencies |
-| local/SDG-MANGO-CONF/README.md | Config editor tools: manconf, manmenu, options.list reference |
-
 ### Planned Doc Topics
 | # | Topic | Description | Priority |
 |---|-------|-------------|----------|
-| 1 | dmsbars Usage | Bar presets reference, toggling individual bars | High |
-| 2 | manlayout Reference | All 14 layouts with descriptions and use cases | High |
-| 3 | manconf Walkthrough | Editing mangoWM configs via fzf + bat + micro | Medium |
-| 4 | manmenu Deep Dive | Interactive config browser, key explanations, documentation links | Medium |
-| 5 | Workspace Swapping | How to use marker.sh and swapmarked.sh workflow | Low |
-| 6 | Options List Reference | Structure of options.list and how to extend it | Low |
+| 1 | dmsbars Usage | 6 presets, individual bar toggles, DMS IPC integration | High |
+| 2 | manlayout Reference | 14 layouts with descriptions, use cases, mmsg commands | High |
+| 3 | manconf Walkthrough | fzf + bat + micro config editing workflow | High |
+| 4 | manmenu Deep Dive | Two-pane config browser, checker.sh explanations, Alt+b for docs | High |
+| 5 | Workspace Swapping | marker.sh + swapmarked.sh workflow, multi-monitor, state files | Medium |
+| 6 | Options List Reference | options.list format (5 pipe-delimited fields), how to extend | Medium |
+| 7 | RGB Daemon | v1 vs v2, hardware requirements (ckb1/ckb-next), theming, autostart | Medium |
+| 8 | Window Grouping | group-all.sh (Fair layouts), group-merge.sh, keybinds | Low |
+| 9 | layoutbutton.sh | Bar widget layout indicator, per-layout side effects | Low |
 
-### Implementation
-- Split existing README.md into focused topic files
-- Follow SDG-DOCS naming convention
+### Existing Content
+| File | Notes |
+|------|-------|
+| `docs/SDG-MANGO-HELPERS/README.md` | 36 lines — list of 4 commands + deps. Covers topics #1-4 at high level |
+| `local/SDG-MANGO-CONF/README.md` | 20 lines — manconf/manmenu brief. Absorb into topics #3-4 |
+| `analysis.md` | Internal analysis with full directory structure and dep mapping |
 
 ## Tips System (`tips/`)
 **Deploy location**: `~/.local/tips/SDG-MANGO-HELPERS/`
 
-### Existing Tips (4)
-| File | Topic |
-|------|-------|
-| bar-presets.md | How to use dmsbars for bar presets |
-| config-editor.md | How to use manconf/manmenu |
-| layout-switching.md | How to use manlayout |
-| workspace-swapping.md | How to use marker/swapmarked |
+### Existing Tips (need conversion to .list format)
+| # | Tip | Format | Notes |
+|---|-----|--------|-------|
+| 1 | Quick bar switch (dmsbars) | `bar-presets.md` | .md format, NOT sdgtip-compatible |
+| 2 | Layout picker (manlayout) | `layout-switching.md` | .md format, NOT sdgtip-compatible |
+| 3 | Config editor (manconf) | `config-editor.md` | .md format, NOT sdgtip-compatible |
+| 4 | Workspace swap (marker/swapmarked) | `workspace-swapping.md` | .md format, NOT sdgtip-compatible |
 
-### Planned Tips
-| # | Tip | Description | Priority |
-|---|-----|-------------|----------|
-| 1 | Quick bar switch | `dmsbars` — quickly switch bar presets | High |
-| 2 | Layout picker | `manlayout` — interactive layout selector | High |
-| 3 | Config editor | `manconf` — browse and edit mango configs | High |
-| 4 | Config explainer | `manmenu` — see explanations for config lines | Medium |
-| 5 | Workspace swap | Mark a workspace with marker.sh, then swap with swapmarked.sh | Low |
+### Additional Planned Tips
+| # | Tip | Priority |
+|---|-----|----------|
+| 5 | Config explainer (manmenu) | Medium |
+| 6 | RGB daemon auto-colors keyboard | Medium |
+| 7 | Layout indicator in bar | Low |
 
-### Implementation
-- Keep existing markdown tip files
-- Add a consolidated `tips.list` for SDG-TIPS aggregation
+## Implementation Notes
+- Existing .md tip files must be converted to `tips/SDG-MANGO-HELPERS/tips.list` (one tip per line) for sdgtip compatibility
+- The .md tip files can remain as expanded reference, but the .list file is what sdgtip reads at runtime
+- RGB daemon and window grouping are entirely undocumented in the current plan — adding them here
+- checker.sh has 15 category branches with detailed help — this is a major feature worth documenting in topic #4
