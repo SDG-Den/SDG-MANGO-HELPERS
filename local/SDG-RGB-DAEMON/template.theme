@@ -1,7 +1,7 @@
-PRIMARY={{colors.error.default.hex}}
-DIM=
-ALT=
-ALTDIM=
-OK=
-WARN=
-ERROR=
+PRIMARY={{colors.primary.default.hex_stripped}}
+DIM={{colors.primary_container.default.hex_stripped}}
+ALT={{colors.tertiary.default.hex_stripped}}
+ALTDIM={{color.tertiary_container.default.hex_stripped}}
+OK={{colors.info.default.hex_stripped}}
+WARN={{colors.warning.default.hex_stripped}}
+ERROR={{colors.error.default.hex_stripped}}
