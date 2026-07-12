@@ -2,7 +2,7 @@ Package Name: sdg-mango-helpers
 Descriptive Name: SDG Mango Helper Tools
 Source: https://github.com/SDG-Den/SDG-MANGO-HELPERS
 Maintainer: SDGDen
-Version:0.2
+Version:0.2.1
 
 Dependencies: 
 mangowm, dms, fzf, bat, jq, micro

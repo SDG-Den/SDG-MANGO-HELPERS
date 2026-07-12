@@ -88,14 +88,14 @@ apply_keymode() {
     esac
 }
 
-CURMODE=$(mmsg get keymode | jq -r '.keymode' 2>/dev/null || echo "default")
-apply_keymode "$CURMODE"
+
 echo "rgb $primary_dim" > /dev/input/ckb1/cmd
 setrgb space,enter,tab,e,b $primary
 setrgb q,z $error
 setrgb m,h,r $warn
 rgbsetrgb f,t,g,p,j $alt
-
+CURMODE=$(mmsg get keymode | jq -r '.keymode' 2>/dev/null || echo "default")
+apply_keymode "$CURMODE"
 
 # watch theme for updates (auto-restart on crash)
 while true; do
@@ -156,12 +156,13 @@ done &
 
 while true; do
     sleep 60
-    CURMODE=$(mmsg get keymode | jq -r '.keymode' 2>/dev/null || echo "default")
-    apply_keymode "$CURMODE"
+    
     echo "rgb $primary_dim" > /dev/input/ckb1/cmd
     setrgb space,enter,tab,e,b $primary
     setrgb q,z $error
     setrgb m,h,r $warn
     rgbsetrgb f,t,g,p,j $alt
+    CURMODE=$(mmsg get keymode | jq -r '.keymode' 2>/dev/null || echo "default")
+    apply_keymode "$CURMODE"
 done
 
