@@ -1,7 +1,7 @@
 Package Name: sdg-mango-helpers
 Descriptive Name: SDG Mango Helper Tools
-Source: https://git.sdgcloud.nl/SDGDen/SDG-MANGO-HELPERS
-Maintainer: SDGDen <sdgden@sdgcloud.nl>
+Source: https://github.com/SDG-Den/SDG-MANGO-HELPERS
+Maintainer: SDGDen
 Version:0.2
 
 Dependencies: 
