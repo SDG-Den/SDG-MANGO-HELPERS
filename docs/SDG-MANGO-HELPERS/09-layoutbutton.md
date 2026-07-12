@@ -1,0 +1,43 @@
+# layoutbutton.sh — Bar Widget Layout Indicator
+
+Queries the active monitor's layout and executes per-layout side effects. Designed to be used as a bar widget or bound to a key.
+
+```
+~/.local/SDG-MANGO-LAYOUTS/layoutbutton.sh
+```
+
+## How It Works
+
+1. Gets the active monitor name via `mmsg get all-monitors | jq`
+2. Gets the layout code for that monitor via `mmsg get monitor <name> | jq`
+3. Maps the layout code to a side effect and calls it
+
+## Layout → Side Effect Mapping
+
+| Layout | Code | Side Effect | Description |
+|--------|------|-------------|-------------|
+| Left Master | `T` | `zoom` | Focus master window |
+| Horizontal Scroller | `S` | `switch_proportion_preset` | Cycle proportion presets |
+| Horizontal Grid | `G` | `toggle_render_border` + `togglegaps` | Toggle borders + gaps |
+| Monocle | `M` | *(none)* | No action needed |
+| Horizontal Deck | `K` | `zoom` | Focus active deck window |
+| Center Master | `CT` | `zoom` | Focus master window |
+| Right Master | `RT` | `zoom` | Focus master window |
+| Vertical Scroller | `VS` | `switch_proportion_preset` | Cycle proportion presets |
+| Top Master | `VT` | `zoom` | Focus master window |
+| Vertical Grid | `VG` | `toggle_render_border` + `togglegaps` | Toggle borders + gaps |
+| Vertical Deck | `VK` | `zoom` | Focus active deck window |
+| Dwindle | `DW` | `togglemaximizescreen` | Toggle maximized state |
+| Fair | `F` | `group-all.sh` | Group all windows |
+| Vertical Fair | `VF` | `group-all.sh` | Group all windows |
+| *(unknown)* | * | `notify-send` warning | Unhandled layout detected |
+
+## Notes
+
+- **Fair layouts** (F, VF) trigger `group-all.sh` for automatic window grouping — see `08-window-grouping.md`
+- The script can be used as a bar widget by piping its echo output to a DMS bar component
+- Sends `notify-send` notifications for the unhandled default case
+
+## Dependencies
+
+`mmsg`, `jq`, `notify-send`
