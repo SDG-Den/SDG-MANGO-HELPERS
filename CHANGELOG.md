@@ -1,3 +1,8 @@
+#  sdg-mango-helpers update 0.3.1.1
+    
+## changelog 0.3.1 > 0.3.1.1
+
+fixed some stuff related to rgbkeys
 #  sdg-mango-helpers update 0.3.1
     
 ## changelog 0.3 > 0.3.1

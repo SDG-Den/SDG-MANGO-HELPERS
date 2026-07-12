@@ -94,7 +94,7 @@ setrgb space,enter,tab,e,b $primary
 setrgb q,z $error
 setrgb m,h,r $warn
 rgbsetrgb f,t,g,p,j $alt
-command -v rgbkeys && pamixer --get-volume | awk '{print $1}' | rgbkeys
+command -v rgbkeys >/dev/null 2>&1 && pamixer --get-volume | awk '{print $1}' | rgbkeys
 CURMODE=$(mmsg get keymode | jq -r '.keymode' 2>/dev/null || echo "default")
 apply_keymode "$CURMODE"
 
@@ -111,7 +111,7 @@ while true; do
         setrgb q,z $error
         setrgb m,h,r $warn
         setrgb f,t,g,p,j $alt
-        command -v rgbkeys && pamixer --get-volume | awk '{print $1}' | rgbkeys
+        command -v rgbkeys >/dev/null 2>&1 && pamixer --get-volume | awk '{print $1}' | rgbkeys
         CURMODE=$(mmsg get keymode | jq -r '.keymode' 2>/dev/null || echo "default")
         apply_keymode "$CURMODE"
 
@@ -164,7 +164,7 @@ while true; do
     setrgb q,z $error
     setrgb m,h,r $warn
     rgbsetrgb f,t,g,p,j $alt
-    command -v rgbkeys && pamixer --get-volume | awk '{print $1}' | rgbkeys
+    command -v rgbkeys >/dev/null 2>&1 && pamixer --get-volume | awk '{print $1}' | rgbkeys
     CURMODE=$(mmsg get keymode | jq -r '.keymode' 2>/dev/null || echo "default")
     apply_keymode "$CURMODE"
 done
