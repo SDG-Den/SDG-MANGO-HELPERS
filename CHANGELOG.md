@@ -1,3 +1,9 @@
+#  sdg-mango-helpers update 0.3.1
+    
+## changelog 0.3 > 0.3.1
+
+updated rgb daemon to optionally refresh volume key RGB
+
 #  sdg-mango-helpers update 0.3
     
 ## changelog 0.2.1 > 0.3
