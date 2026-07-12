@@ -12,6 +12,10 @@ cp -r "$WORKDIR/local/"* "$HOME/.local/"
 cp -r "$WORKDIR/docs/"* "$HOME/.local/docs/"
 cp -r "$WORKDIR/tips/"* "$HOME/.local/tips/"
 
+mkdir -p "$HOME/.local/matugen"
+cp -r "$WORKDIR/matugen/"* "$HOME/.local/matugen/"
+
+
 chmod a+x "$HOME/.local/SDG-DMS-BARS/bar-presets.sh"
 chmod a+x "$HOME/.local/SDG-MANGO-LAYOUTS/layout-switch.sh"
 chmod a+x "$HOME/.local/SDG-MANGO-LAYOUTS/layoutbutton.sh"

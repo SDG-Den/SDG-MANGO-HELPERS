@@ -1,3 +1,9 @@
+#  sdg-mango-helpers update 0.3
+    
+## changelog 0.2.1 > 0.3
+
+updated matugen templating for new modular system.
+
 #  sdg-mango-helpers update 0.2.1
     
 ## changelog 0.2 > 0.2.1

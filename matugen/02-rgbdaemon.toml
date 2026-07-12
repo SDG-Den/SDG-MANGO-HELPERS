@@ -1,0 +1,4 @@
+
+[templates.rgbdaemon]
+input_path = '~/.local/SDG-RGB-DAEMON/template.theme'
+output_path = '~/.local/SDG-RGB-DAEMON/colors.theme'
