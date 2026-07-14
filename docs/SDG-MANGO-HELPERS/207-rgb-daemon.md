@@ -51,7 +51,7 @@ A template at `~/.local/SDG-RGB-DAEMON/template.theme` contains material design 
 
 ### Keymode Layouts
 
-5 modes, each with different key highlighting:
+Different key highlighting per mode:
 
 | Mode | Highlighted keys |
 |------|-----------------|

@@ -1,6 +1,6 @@
 # manlayout — Layout Switcher
 
-Opens an fzf TUI to switch between 14 window layouts via mangoWM IPC.
+Opens an fzf TUI to switch between window layouts via mangoWM IPC.
 
 ## Usage
 

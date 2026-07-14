@@ -1,6 +1,6 @@
 # options.list — Config Option Reference Database
 
-232-entry reference database powering `manmenu` (`checker.sh` + `browser.sh`).
+Reference database powering `manmenu` (`checker.sh` + `browser.sh`).
 
 ## Location
 
@@ -36,7 +36,7 @@ key_name | example_usage | description | doc_url | extra_category
 - **Overview** (hotarea_*, ov_*)
 - **Bindings** (bind, keymode, mousebind, axisbind, gesturebind, switchbind)
 - **Monitors** (monitorrule)
-- **Dispatchers** (64 entries: killclient, togglefloating, togglefullscreen, focusdir, focusstack, zoom, view, tag, setlayout, incmaster, setmfact, spawn, togglegaps, etc.)
+- **Dispatchers** (killclient, togglefloating, togglefullscreen, focusdir, focusstack, zoom, view, tag, setlayout, incmaster, setmfact, spawn, togglegaps, etc.)
 - **Rules** (windowrule, tagrule, layerrule)
 - **Animations** (animation_type_*, animation_duration_*, animation_curve_*, fade, zoom)
 

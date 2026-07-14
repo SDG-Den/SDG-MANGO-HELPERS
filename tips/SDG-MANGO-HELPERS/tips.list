@@ -1,8 +1,7 @@
-[SDG-MANGO-HELPERS]: Use dmsbars to toggle individual bars or apply full presets like classic, windows-like, mac-like, combo, sidebar, and side+status
-[SDG-MANGO-HELPERS]: Switch between 14 layouts instantly with manlayout — scroller, tile, grid, deck, fair, monocle, and dwindle in horizontal and vertical variants
+[SDG-MANGO-HELPERS]: Use dmsbars to toggle individual bars or apply full presets (classic, windows-like, mac-like, combo, sidebar, side+status)
+[SDG-MANGO-HELPERS]: Switch between layouts instantly with manlayout — scroller, tile, grid, deck, fair, monocle, and dwindle
 [SDG-MANGO-HELPERS]: Use manconf to browse and edit your mangoWM config files with fzf and bat previews
-[SDG-MANGO-HELPERS]: Use manmenu for an interactive config key explainer — select a config line, see its description, and press Alt+b to open docs in Firefox
-[SDG-MANGO-HELPERS]: Mark a workspace with marker.sh, move to another workspace, and run swapmarked.sh to exchange all windows between them
-[SDG-MANGO-HELPERS]: The RGB daemon syncs your keyboard lighting to your current theme and keymode — v2 watches theme files via inotifywait
-[SDG-MANGO-HELPERS]: Group all windows on a monitor with group-all.sh — automatically triggered for Fair layouts via layoutbutton.sh
-[SDG-MANGO-HELPERS]: layoutbutton.sh shows the current layout in your bar and runs per-layout side effects — zoom for master layouts, togglemaximizescreen for dwindle, group-all for fair
+[SDG-MANGO-HELPERS]: Use manmenu to see a description of any config line — press Alt+b to open the relevant docs
+[SDG-MANGO-HELPERS]: Mark a workspace, move to another, and run swapmarked to exchange all windows between them
+[SDG-MANGO-HELPERS]: The RGB daemon syncs your keyboard lighting to keymode and theme changes automatically
+[SDG-MANGO-HELPERS]: layoutbutton shows the current layout in your bar and runs per-layout side effects (zoom, group-all, etc.)
