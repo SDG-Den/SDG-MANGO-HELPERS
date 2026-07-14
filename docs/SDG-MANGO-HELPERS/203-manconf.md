@@ -1,6 +1,8 @@
 # manconf — Config File Browser & Editor
 
-Opens an fzf TUI to browse and edit mangoWM configuration files.
+**What this is for:** Your desktop settings are stored in configuration files. This tool lets you browse and edit them without needing to remember file paths or use a separate text editor.
+
+Opens an interactive menu to browse and edit mangoWM configuration files.
 
 ## Usage
 

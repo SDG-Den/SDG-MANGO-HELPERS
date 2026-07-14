@@ -1,6 +1,8 @@
 # RGB Daemon
 
-Two daemon versions for syncing keyboard lighting with mangoWM state.
+**What this is for:** If your keyboard has RGB lighting, this daemon can sync it with your desktop theme — changing colors automatically when you switch wallpapers or modes.
+
+Daemons for syncing keyboard lighting with mangoWM state.
 
 ## v1 — rgb-daemon.sh (ckb-next)
 

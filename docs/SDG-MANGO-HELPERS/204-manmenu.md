@@ -1,6 +1,8 @@
 # manmenu — Interactive Config Browser
 
-Two-pane fzf TUI for browsing mangoWM config lines with live explanations and documentation links.
+**What this is for:** Not sure what a configuration option does? This tool shows each line of your config files with an explanation of what it controls.
+
+Two-pane interactive menu for browsing mangoWM config lines with live explanations and documentation links.
 
 ## Usage
 
@@ -24,7 +26,7 @@ Press `Alt+b` to open the config key's documentation URL in Firefox via `browser
 
 ## checker.sh — Key Explainer
 
-Extracts the key name from a config line, looks it up in `options.list`, and provides detailed help for 15 categories:
+Extracts the key name from a config line, looks it up in `options.list`, and provides detailed help for several categories:
 
 | Category | Covers |
 |----------|--------|

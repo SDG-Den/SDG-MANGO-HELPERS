@@ -1,5 +1,7 @@
 # layoutbutton.sh — Bar Widget Layout Indicator
 
+**What this is for:** Shows the current window layout on your bar and can run automatic actions depending on which layout is active — for example, grouping all windows when you switch to fair layout.
+
 Queries the active monitor's layout and executes per-layout side effects. Designed to be used as a bar widget or bound to a key.
 
 ```

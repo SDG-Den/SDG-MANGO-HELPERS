@@ -1,6 +1,8 @@
 # Workspace Swapping
 
-Swap all windows between two workspaces using `marker.sh` + `swapmarked.sh`.
+**What this is for:** If you have windows spread across two workspaces and want to reorganise, this lets you swap everything between them at once.
+
+Swap all windows between two workspaces.
 
 ## Workflow
 

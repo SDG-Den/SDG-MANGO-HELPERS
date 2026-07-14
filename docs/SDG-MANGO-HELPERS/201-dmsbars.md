@@ -1,6 +1,8 @@
 # dmsbars — Bar Preset Manager
 
-Opens an fzf TUI to toggle individual DMS bars or apply full bar presets.
+**What this is for:** The bars at the top, bottom, or sides of your screen can be rearranged into different styles. Want a Windows-like taskbar or a mac-like status bar? This tool lets you switch between them instantly.
+
+Opens an interactive menu to toggle individual DMS bars or apply full bar presets.
 
 ## Usage
 

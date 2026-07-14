@@ -1,6 +1,8 @@
 # Window Grouping
 
-Two scripts for managing window groups on a monitor.
+**What this is for:** Grouping windows together lets them act as a single unit — moving them, resizing them, or switching between groups instead of individual windows.
+
+Scripts for managing window groups on a monitor.
 
 ## group-all.sh — Group All Windows
 

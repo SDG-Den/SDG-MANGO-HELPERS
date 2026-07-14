@@ -8,4 +8,4 @@ Dependencies:
 mangowm, dms, fzf, bat, jq, micro
 
 Description: 
-Collection of Bash shell scripts providing convenient TUI tools for configuring and interacting with mangoWM and DankMaterial Shell. Commands: dmsbars (bar preset picker), manlayout (layout switcher, 14 layouts), manconf (config file editor), manmenu (interactive config line browser with explanations). Also provides workspace swapping and layout indicator scripts.
+Collection of Bash shell scripts providing convenient TUI tools for configuring and interacting with mangoWM and DankMaterial Shell. Commands: dmsbars (bar preset picker), manlayout (layout switcher), manconf (config file editor), manmenu (interactive config line browser with explanations). Also provides workspace swapping and layout indicator scripts.
