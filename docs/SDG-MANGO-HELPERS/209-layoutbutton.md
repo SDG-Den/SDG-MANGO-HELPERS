@@ -34,11 +34,6 @@ Queries the active monitor's layout and executes per-layout side effects. Design
 | Vertical Fair | `VF` | `group-all.sh` | Group all windows |
 | *(unknown)* | * | `notify-send` warning | Unhandled layout detected |
 
-## Notes
-
-- **Fair layouts** (F, VF) trigger `group-all.sh` for automatic window grouping — see `08-window-grouping.md`
-- The script can be used as a bar widget by piping its echo output to a DMS bar component
-- Sends `notify-send` notifications for the unhandled default case
 
 ## Dependencies
 
