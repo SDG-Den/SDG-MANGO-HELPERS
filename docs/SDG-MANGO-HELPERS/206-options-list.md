@@ -1,8 +1,8 @@
 # options.list — Config Option Reference Database
 
-**What this is for:** This is the data file that powers manmenu. You can browse it directly if you want to see all configuration options at once. It is not meant to be run directly.
+**What this is for:** This is the data file that powers `mangoconf view`. You can browse it directly if you want to see all configuration options at once. It is not meant to be run directly.
 
-Reference database powering `manmenu`.
+Reference database powering `mangoconf view`.
 
 ## Location
 

@@ -4,16 +4,15 @@ Helper tools for mangoWM — bar presets, layout switching, config editing, and 
 
 ## Description
 
-SDG-MANGO-HELPERS is a collection of TUI tools for interacting with mangoWM and DMS. It provides four system commands and additional internal scripts for workspace management.
+SDG-MANGO-HELPERS is a collection of TUI tools for interacting with mangoWM and DMS. It provides system commands and additional internal scripts for workspace management.
 
 ## Features
 
 - **dmsbars** — interactive bar preset picker (Classic, Windows, Mac, Combo, Sidebar, Side+Status), toggle individual bars
-- **manlayout** — 14 layout switcher (Scroller H/V, Tile L/T/C/R, Grid, Deck, Fair, Monocle, Dwindle)
-- **mangoconf** — config file browser with bat preview, opens in micro editor
-- **manmenu** — interactive config line explainer with documentation links
+- **manlayout** — layout switcher (Scroller H/V, Tile L/T/C/R, Grid, Deck, Fair, Monocle, Dwindle)
+- **mangoconf** — config file browser and editor (`mangoconf edit`) with bat preview, plus line-by-line viewer (`mangoconf view`) with explanations
 - **Workspace swapping** — mark and swap windows between workspaces
-- **232-entry config reference** — covers all mangoWM options
+- **Config option reference** — covers all mangoWM options
 - **Layout button** — bar widget showing current layout
 
 ## CLI Usage
@@ -21,8 +20,8 @@ SDG-MANGO-HELPERS is a collection of TUI tools for interacting with mangoWM and 
 ```bash
 dmsbars                   # Pick bar preset
 manlayout                 # Pick layout
-mangoconf                   # Browse and edit mangoWM configs
-manmenu                   # Browse config with explanations
+mangoconf edit            # Browse and edit mangoWM config files
+mangoconf view            # Browse config lines with explanations
 ```
 
 ## Installation
@@ -40,5 +39,5 @@ sdgpkg install sdg-mango-helpers
 
 ## Related Packages
 
-- **SDG-MANGO-CORE** — references mangoconf/manmenu in keybinds
+- **SDG-MANGO-CORE** — references mangoconf in keybinds
 - **SDG-UTIL-SCRIPTS** — shares config editing references

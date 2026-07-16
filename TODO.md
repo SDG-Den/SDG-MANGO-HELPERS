@@ -1,13 +1,15 @@
 # TODO — SDG-MANGO-HELPERS
 
 ## Documentation
-- [ ] Verify all 12 doc files are usage-focused
-- [ ] Remove specific counts (layouts, presets, etc.)
+- [x] Rewrite docs for mangoconf view/edit subcommands (v0.3.2)
+- [x] Mark manmenu as replaced by mangoconf view
+- [x] Update all cross-references (SDG-DOCS, SDG-MANGO-CORE)
+- [x] Remove specific counts (layouts, presets, etc.)
 
 ## Testing
 - [ ] `dmsbars` preset picker
-- [ ] `manlayout` — all 14 layouts
-- [ ] `mangoconf` config browser
-- [ ] `manmenu` config explainer
+- [ ] `manlayout` — all layouts
+- [ ] `mangoconf edit` — config file browser and editor
+- [ ] `mangoconf view` — line-by-line config explainer
 - [ ] Workspace swap (marker + swapmarked)
 - [ ] RGB daemon

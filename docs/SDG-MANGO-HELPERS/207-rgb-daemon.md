@@ -81,13 +81,14 @@ Number keys 1-9 are lit to show active vs inactive tags:
 - **primary** if the tag is active
 - **primary_dim** if inactive
 
-### Four Parallel Watchers
+### Five Parallel Watchers
 
 | Watcher | Mechanism | Action |
 |---------|-----------|--------|
 | Theme | `inotifywait -q -m -e close_write` on `colors.theme` | Re-extract colors, reapply all |
 | Keymode | `mmsg watch keymode` | Apply keymode layout |
 | Tags | `mmsg watch all-tags` | Update number key indicators |
+| Volume Keys | `mmsg watch` on volume events | Refresh volume key RGB when volume changes (optional) |
 | Refresh | `sleep 60` loop | Reapply keymode + main keys every 60s |
 
 ## Autostart
