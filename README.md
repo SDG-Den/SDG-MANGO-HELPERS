@@ -10,7 +10,7 @@ SDG-MANGO-HELPERS is a collection of TUI tools for interacting with mangoWM and 
 
 - **dmsbars** — interactive bar preset picker (Classic, Windows, Mac, Combo, Sidebar, Side+Status), toggle individual bars
 - **manlayout** — 14 layout switcher (Scroller H/V, Tile L/T/C/R, Grid, Deck, Fair, Monocle, Dwindle)
-- **manconf** — config file browser with bat preview, opens in micro editor
+- **mangoconf** — config file browser with bat preview, opens in micro editor
 - **manmenu** — interactive config line explainer with documentation links
 - **Workspace swapping** — mark and swap windows between workspaces
 - **232-entry config reference** — covers all mangoWM options
@@ -21,7 +21,7 @@ SDG-MANGO-HELPERS is a collection of TUI tools for interacting with mangoWM and 
 ```bash
 dmsbars                   # Pick bar preset
 manlayout                 # Pick layout
-manconf                   # Browse and edit mangoWM configs
+mangoconf                   # Browse and edit mangoWM configs
 manmenu                   # Browse config with explanations
 ```
 
@@ -40,5 +40,5 @@ sdgpkg install sdg-mango-helpers
 
 ## Related Packages
 
-- **SDG-MANGO-CORE** — references manconf/manmenu in keybinds
+- **SDG-MANGO-CORE** — references mangoconf/manmenu in keybinds
 - **SDG-UTIL-SCRIPTS** — shares config editing references

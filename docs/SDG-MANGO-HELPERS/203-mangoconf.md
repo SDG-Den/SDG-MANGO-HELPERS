@@ -1,4 +1,4 @@
-# manconf — Config File Browser & Editor
+# mangoconf — Config File Browser & Editor
 
 **What this is for:** Your desktop settings are stored in configuration files. This tool lets you browse and edit them without needing to remember file paths or use a separate text editor.
 
@@ -7,7 +7,7 @@ Opens an interactive menu to browse and edit mangoWM configuration files.
 ## Usage
 
 ```
-manconf
+mangoconf
 ```
 
 No arguments. Lists all files in `~/.config/mango/` with `bat` syntax-highlighted previews.
@@ -26,4 +26,4 @@ No arguments. Lists all files in `~/.config/mango/` with `bat` syntax-highlighte
 ## Related Keybinds
 
 Configured in SDG-MANGO-CORE:
-- `SUPER + M` — launch manconf
+- `SUPER + M` — launch mangoconf

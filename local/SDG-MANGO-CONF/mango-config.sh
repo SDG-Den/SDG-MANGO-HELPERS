@@ -3,13 +3,17 @@
 CONFDIR="$HOME/.config/mango"
 echo "confdir is $CONFDIR"
 
-app=micro
+app=$EDITOR
 
-selected=$(ls -1 $CONFDIR | fzf --layout=reverse --preview="bat $CONFDIR/{}")
+while $true; do
+	selected=$(ls -1 $CONFDIR | fzf --layout=reverse --preview="bat $CONFDIR/{}")
 
-echo "selected is $selected"
+	echo "selected is $selected"
+	if [ "$selected" == "" ]; then
+		exit 0
+	fi
+	$app $CONFDIR/$selected
 
-$app $CONFDIR/$selected
-
-echo "opened $CONFDIR/$selected in $app"
+	echo "opened $CONFDIR/$selected in $app"
+done
 

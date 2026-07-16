@@ -12,5 +12,5 @@ rm $HOME/.local/matugen/02-rgbdaemon.toml
 
 sudo unlink /usr/bin/dmsbars
 sudo unlink /usr/bin/manlayout
-sudo unlink /usr/bin/manconf
+sudo unlink /usr/bin/mangoconf
 sudo unlink /usr/bin/manmenu

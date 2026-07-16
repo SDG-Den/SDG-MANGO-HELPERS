@@ -8,7 +8,7 @@ line-by-line with explanations for each setting.
 | Command | Keybind | Purpose |
 |---------|---------|---------|
 | `manmenu` | SUPER+ALT+M | Interactive config line browser |
-| `manconf` | SUPER+M | Config file editor (opens in micro) |
+| `mangoconf` | SUPER+M | Config file editor (opens in micro) |
 
 ## Scripts
 
