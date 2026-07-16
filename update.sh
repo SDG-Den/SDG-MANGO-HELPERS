@@ -18,5 +18,4 @@ cp -r "$WORKDIR/matugen/"* "$HOME/.local/matugen/"
 
 sudo ln -sf "$HOME/.local/SDG-DMS-BARS/bar-presets.sh" /usr/bin/dmsbars
 sudo ln -sf "$HOME/.local/SDG-MANGO-LAYOUTS/layout-switch.sh" /usr/bin/manlayout
-sudo ln -sf "$HOME/.local/SDG-MANGO-CONF/mango-config.sh" /usr/bin/mangoconf
-sudo ln -sf "$HOME/.local/SDG-MANGO-CONF/menu.sh" /usr/bin/manmenu
+sudo ln -sf "$HOME/.local/SDG-MANGO-CONF/mangocli.sh" /usr/bin/mangoconf
