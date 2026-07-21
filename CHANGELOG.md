@@ -1,3 +1,16 @@
+#  sdg-mango-helpers update 0.3.3
+    
+## changelog 0.3.2 > 0.3.3
+
+added new "equalize-scroller" utility that will adjust the scroller proportion of all windows to make them fit on your monitor. 
+
+
+to use:
+
+add a bind to your mango config
+```
+bind=SUPER,U,spawn_shell,equalize-scroller
+```
 #  sdg-mango-helpers update 0.3.2
     
 ## changelog 0.3.1.1 > 0.3.2

@@ -25,11 +25,14 @@ chmod a+x "$HOME/.local/SDG-MANGO-CONF/checker.sh"
 chmod a+x "$HOME/.local/SDG-MANGO-CONF/browser.sh"
 chmod a+x "$HOME/.local/SDG-MANGO-SWAP/marker.sh"
 chmod a+x "$HOME/.local/SDG-MANGO-SWAP/swapmarked.sh"
+chomd a+x "$HOME/.local/SDG-MANGO-LAYOUTS/equalize-scroller.sh"
 
 sudo ln -sf "$HOME/.local/SDG-DMS-BARS/bar-presets.sh" /usr/bin/dmsbars
 sudo ln -sf "$HOME/.local/SDG-MANGO-LAYOUTS/layout-switch.sh" /usr/bin/manlayout
 sudo ln -sf "$HOME/.local/SDG-MANGO-CONF/mangocli.sh" /usr/bin/mangoconf
+sudo ln -sf "$HOME/.local/SDG-MANGO-LAYOUTS/equalize-scroller.sh" /usr/bin/equalize-scroller
 
 which dmsbars || echo "INSTALL FAILED!"
 which manlayout || echo "INSTALL FAILED!"
 which mangoconf || echo "INSTALL FAILED!"
+which equalize-scroller || echo "INSTALL FAILED!"
