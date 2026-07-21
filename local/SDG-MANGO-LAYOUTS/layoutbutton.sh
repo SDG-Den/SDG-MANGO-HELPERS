@@ -16,7 +16,7 @@ case $LAYOUT in
         ;;
     S)
         echo "Horizontal Scroller"
-        mmsg dispatch switch_proportion_preset
+        equalize-scroller
         ;;
     G)
         echo "Horizontal Grid"
